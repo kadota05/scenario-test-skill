@@ -1,4 +1,4 @@
-# Scenario Test from Sessions v3
+# Scenario Test from Sessions
 
 Claude Codeのセッション履歴・設計書・git履歴を分析し、シナリオベーステスト仕様書を自動生成するスキル。
 
@@ -34,7 +34,7 @@ cd scenario-test-skill
 3. 以下を実行:
 
 ```
-/scenario-test-from-sessions-v3
+/scenario-test-from-sessions
 ```
 
 ブランチを選択すると、自動的に以下が実行される:
@@ -56,12 +56,12 @@ cd scenario-test-skill
 ```
 ~/.claude/
 ├── skills/
-│   └── scenario-test-from-sessions-v3/
+│   └── scenario-test-from-sessions/
 │       └── SKILL.md                          # メインスキル
 └── agents/
-    ├── branch-context-builder-v3.md          # git履歴・セッション分析
-    ├── usage-scenario-discoverer-v3.md       # 利用シーン発見
-    └── scenario-reviewer-v3.md               # レビュー（チェックA-I）
+    ├── branch-context-builder.md              # git履歴・セッション分析
+    ├── usage-scenario-discoverer.md           # 利用シーン発見
+    └── scenario-reviewer.md                   # レビュー（チェックA-I）
 ```
 
 ## アップデート

@@ -6,7 +6,7 @@ BRANCH="main"
 TMP_DIR="$(mktemp -d)"
 CLAUDE_DIR="$HOME/.claude"
 
-echo "=== Scenario Test Skill v3 Installer ==="
+echo "=== Scenario Test Skill Installer ==="
 echo ""
 
 # Download
@@ -15,16 +15,16 @@ curl -sL "https://github.com/$REPO/archive/refs/heads/$BRANCH.tar.gz" | tar xz -
 SRC="$TMP_DIR/scenario-test-skill-$BRANCH"
 
 # Create directories
-mkdir -p "$CLAUDE_DIR/skills/scenario-test-from-sessions-v3"
+mkdir -p "$CLAUDE_DIR/skills/scenario-test-from-sessions"
 mkdir -p "$CLAUDE_DIR/agents"
 
 # Install skill
-cp "$SRC/skills/scenario-test-from-sessions-v3/SKILL.md" \
-   "$CLAUDE_DIR/skills/scenario-test-from-sessions-v3/SKILL.md"
-echo "  ✅ skills/scenario-test-from-sessions-v3/SKILL.md"
+cp "$SRC/skills/scenario-test-from-sessions/SKILL.md" \
+   "$CLAUDE_DIR/skills/scenario-test-from-sessions/SKILL.md"
+echo "  ✅ skills/scenario-test-from-sessions/SKILL.md"
 
 # Install agents
-for agent in branch-context-builder-v3 usage-scenario-discoverer-v3 scenario-reviewer-v3; do
+for agent in branch-context-builder usage-scenario-discoverer scenario-reviewer; do
   cp "$SRC/agents/${agent}.md" "$CLAUDE_DIR/agents/${agent}.md"
   echo "  ✅ agents/${agent}.md"
 done
@@ -37,4 +37,4 @@ echo "=== Installation complete ==="
 echo ""
 echo "To use:"
 echo "  1. Start a new Claude Code session (or run /agents to reload)"
-echo "  2. Run: /scenario-test-from-sessions-v3"
+echo "  2. Run: /scenario-test-from-sessions"

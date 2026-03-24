@@ -1,5 +1,5 @@
 ---
-name: scenario-reviewer-v3
+name: scenario-reviewer
 description: Use when reviewing a scenario test spec draft for temporal boundary violations, groundless scenarios, quality issues, and US/IB classification validity — reads the draft and source materials, outputs Approve or Request Changes with specific findings
 tools: Read, Bash, Grep
 model: opus

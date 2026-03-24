@@ -1,5 +1,5 @@
 ---
-name: usage-scenario-discoverer-v3
+name: usage-scenario-discoverer
 description: Use when discovering and maintaining real-world usage scenarios for a software project — reads README, architecture code, tests, and branch diffs to describe how users actually use the software, outputting user-behavior + system-state-transition pairs, implicit usage contexts, and fragility hints per state transition
 tools: Read, Bash, Grep, Glob, Write
 model: opus

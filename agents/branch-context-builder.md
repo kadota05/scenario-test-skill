@@ -1,5 +1,5 @@
 ---
-name: branch-context-builder-v3
+name: branch-context-builder
 description: Use when analyzing a git branch to build a chronological evolution document with user impact map — reconstructs design→plan→implementation→fixes→direction-changes timeline from git diffs, session logs, and design docs, and maps each change to its user-facing impact. Outputs /tmp/branch-evolution.md.
 tools: Read, Bash, Grep, Glob, Write
 model: opus
